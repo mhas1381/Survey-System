@@ -12,6 +12,10 @@
 <div class="auth">
     <a href="{% url 'accounts:login' %}">ورود به سامانه نظرسنجی توسط سامانه احراز هویت مرکزی</a>
 </div>
-
+{% if request.user.is_authenticated %}
+<p>user is authenticated as {{request.user.username}}</p>
+{% else %}
+user is not authenticated'
+{% endif %}
 </body>
 </html>
