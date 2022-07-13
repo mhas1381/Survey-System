@@ -34,3 +34,16 @@ html, body {
 .auth a:link {
     text-decoration : none;
 }
+
+.auth .manager {
+    text-align       : center;
+    float            : right;
+    left             : 155px;
+    width            : 28%;
+    margin           : 20px 50px;
+    display          : block;
+    font-size        : 15px;
+    font-weight      : bold;
+    background-color : #77a030;
+    color            : #090c09;
+}
