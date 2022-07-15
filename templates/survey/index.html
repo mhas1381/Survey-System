@@ -111,11 +111,11 @@ user is not authenticated'
 		</div>
 
 		<div class="form-control">
+			{% for question in questions %}
 			<label>
-				Would you recommend GeeksforGeeks
-				to a friend?
+				{{question.question}}
 			</label>
-
+			{% endfor %}
 			<!-- Input Type Radio Button -->
 			<label for="recommed-1">
 				<input type="radio"
