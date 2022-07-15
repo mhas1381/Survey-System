@@ -20,8 +20,8 @@ from django.conf.urls.static import static
 from website.urls import *
 from accounts.urls import *
 urlpatterns = [
-    path('admin/', admin.site.urls,name='test'),
+    path('admin/', admin.site.urls,),
     path('' , include('website.urls')),
     path('accounts/', include('accounts.urls')),
-    path('survey/',include('polls.urls'))
+    # path('survey/',include('polls.urls'))
 ]
