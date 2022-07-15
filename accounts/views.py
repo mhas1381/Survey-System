@@ -10,4 +10,4 @@ def logged_in(request):
             user = authenticate(request, username=username, password=password)
             if user is not None:
                 login(request, user)
-                return render(request,'survey/survey.html')
+                return render(request,'survey/index.html')
